@@ -2,6 +2,8 @@
 
 A boilerplate for creating a devtools extension for multiple browsers from a single code base.
 
+![Screengrabs of Chrome (top left), Opera (bottom left) and Firefox (light & dark themes)](screengrabs.png)
+
 Currently Fuse will build bare-bones devtools extensions for:
 
 * Firefox (restartless)
@@ -16,9 +18,8 @@ Fuse requires nodeJS and NPM so you'll need to make sure you have them installed
 npm install
 ```
 
-## Configure the extension
+## Configure the extensions
 
-* manifests
 * `config/firefox.json`
   * give your extension a unique ID (email address syntax)
 
