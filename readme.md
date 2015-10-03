@@ -2,7 +2,7 @@
 
 A boilerplate for creating a devtools extension for multiple browsers from a single code base.
 
-![Screengrabs of Chrome (top left), Opera (bottom left) and Firefox (light & dark themes)](screengrabs.png)
+![Screengrabs of Chrome (top), Opera (2nd) and Firefox (light & dark themes)](screengrabs.png)
 
 Currently Fuse will build bare-bones devtools extensions for:
 
