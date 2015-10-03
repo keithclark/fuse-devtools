@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://browser/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://<%= pkg.name %>/skin/css/main.css" type="text/css"?>
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <vbox id="content" flex="1">
+    <label id="extension-title" />
+    <label id="extension-greeting" />
+  </vbox>
+
+  <script type="application/javascript;version=1.8" src="chrome://browser/content/devtools/theme-switching.js" />
+  <script src="js/core.js" />
+  <script src="js/main.js" />
+
+</window>

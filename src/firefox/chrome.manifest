@@ -1,0 +1,2 @@
+content <%= pkg.name %> chrome/
+skin    <%= pkg.name %> classic/1.0 skin/

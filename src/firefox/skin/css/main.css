@@ -1,0 +1,23 @@
+/*
+
+Colours documented here:
+https://developer.mozilla.org/en-US/docs/Tools/DevToolsColors
+
+*/
+
+#content {
+	background-color: var(--theme-body-background);
+	color: var(--theme-body-color);
+}
+
+#extension-title {
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#extension-greeting {
+    font-size: 150%;
+    font-weight: bold;
+    color: var(--theme-body-color-alt);
+}

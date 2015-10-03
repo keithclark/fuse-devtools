@@ -1,0 +1,15 @@
+{
+    "name": "__MSG_extensionName__",
+    "description":  "__MSG_extensionDescription__",
+    "version": "<%= pkg.version %>",
+    "author": "<%= pkg.author.name %>",
+    "icons": {
+        "16": "img/icon-16.png",
+        "48": "img/icon-48.png",
+        "128": "img/icon-128.png"
+    },
+    "homepage_url": "<%= pkg.homepage %>",
+    "manifest_version": 2,
+    "devtools_page": "devtools.html",
+    "default_locale": "en"
+}

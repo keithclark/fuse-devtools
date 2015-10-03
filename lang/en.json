@@ -1,0 +1,5 @@
+{
+    "extensionName":                "My devtools extension",
+    "extensionDescription":         "Some text about what my devtools extension does",
+    "extensionTabText":             "My extension"
+}

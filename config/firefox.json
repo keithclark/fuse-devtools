@@ -1,0 +1,5 @@
+{
+    "extensionId": "my.extension@my-extension.com",
+    "minVersion": "29.0a1",
+    "maxVersion": "490.a1"
+}
