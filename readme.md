@@ -12,7 +12,7 @@ Currently Fuse will build bare-bones devtools extensions for:
 
 ## Getting started
 
-Fuse requires nodeJS and NPM so you'll need to make sure you have them installed before going any further.
+Fuse requires Node.js and npm so you'll need to make sure you have them installed before going any further.
 
 ```
 npm install
