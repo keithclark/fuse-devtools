@@ -106,6 +106,22 @@ CSS:
 * Chrome / Opera: `src/chromium/css/main.css` 
 
 
+## Packaging your extension
+
+Fuse can package your extension into a standalone installable files. To package everything, ensure your have run the relevant build tasks and then run:
+
+```
+grunt package
+```
+
+If you need to package individual extensions:
+
+```
+grunt package:chrome
+grunt package:opera
+grunt package:firefox
+```
+
 
 ## Project structure
 
