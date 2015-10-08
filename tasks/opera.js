@@ -55,10 +55,19 @@ module.exports = function(grunt) {
                 files: 'src/chromium/**/*.js',
                 tasks: ['newer:jshint:opera', 'newer:copy:opera']
             }
+        },
+        package: {
+            opera: {
+                method: 'chrome',
+                src: 'build/opera',
+                dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.nex',
+                bin: '/Applications/Opera.app/Contents/MacOS/Opera',
+                privateKeyFile: 'config/opera.pem'
+            }
         }
     });
 
-    grunt.registerTask('opera', 'Builds the opera extension', function() {
+    grunt.registerTask('opera', 'Builds the Opera extension', function() {
         this.requires('core');
         grunt.task.run(['jshint:opera', 'copy:opera']);
     });

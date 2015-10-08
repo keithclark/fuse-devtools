@@ -67,6 +67,13 @@ module.exports = function(grunt) {
                 files: ['src/firefox/**/*.js'],
                 tasks: ['newer:jshint:firefox', 'newer:copy:firefox']
             }
+        },
+        package: {
+            firefox: {
+                method: 'zip',
+                src: 'build/firefox',
+                dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.xpi'
+            }
         }
     });
 

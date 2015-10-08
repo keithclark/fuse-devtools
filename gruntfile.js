@@ -67,10 +67,10 @@ module.exports = function(grunt) {
     grunt.loadTasks('tasks');
 
     // Register the default task
-    grunt.registerTask('build', ['jshint:grunt', 'jshint:tests', 'core', 'chrome', 'firefox', 'opera']);
+    grunt.registerTask('build', 'Lint, test and build everything', ['jshint:grunt', 'jshint:tests', 'core', 'chrome', 'firefox', 'opera']);
 
     // Register alais tasks so tooling can be switched
-    grunt.registerTask('test', 'jasmine_node');
-    grunt.registerTask('lint', 'jshint');
+    grunt.registerTask('test', 'Run all unit tests', 'jasmine_node');
+    grunt.registerTask('lint', 'Lint all project files', 'jshint');
 
 };
