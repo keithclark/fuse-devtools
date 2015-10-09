@@ -122,6 +122,18 @@ grunt package:opera
 grunt package:firefox
 ```
 
+### Private keys for Chromium
+
+When packaging for the first time, both Chrome and Opera will export a private key (a `.pem` file) to the `/config` directory. You'll need to keep these files safe as they will be required when you release future versions of your extension. _NEVER_ add these files to your public repos.
+
+If your moving an existing extension to Fuse you can copy your private key files here:
+
+* For Chrome: `/config/chrome.pem`
+* For Opera: `/config/opera.pem`
+
+_NOTE: Opera will fail to package an extension if it is already running. This is a known issue that Opera developers are working on._
+_NOTE: Opera will fail to terminate when packaging with an existing private key. This causes the extension package task to hang. To work around this you'll need to terminate Opera manually. A bug has been submitted (DNA-44534)._
+
 
 ## Project structure
 
