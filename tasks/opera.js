@@ -61,7 +61,10 @@ module.exports = function(grunt) {
                 method: 'chrome',
                 src: 'build/opera',
                 dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.nex',
-                bin: '/Applications/Opera.app/Contents/MacOS/Opera',
+                bin: [
+                    '/Applications/Opera.app/Contents/MacOS/Opera',
+                    'C:\\Program Files\\Opera\\*\\opera.exe'
+                ],
                 privateKeyFile: 'config/opera.pem'
             }
         }
