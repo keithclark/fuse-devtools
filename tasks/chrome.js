@@ -55,6 +55,18 @@ module.exports = function(grunt) {
                 files: 'src/chromium/**/*.js',
                 tasks: ['newer:jshint:chrome', 'newer:copy:chrome']
             }
+        },
+        package: {
+            chrome: {
+                method: 'chrome',
+                src: 'build/chrome',
+                dest: 'dist/<%= pkg.name %>-<%= pkg.version %>.crx',
+                bin: [
+                    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+                    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+                ],
+                privateKeyFile: 'config/chrome.pem'
+            }
         }
     });
 
