@@ -3,8 +3,8 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id><%= browser.firefox.extensionId %></em:id>
         <em:version><%= pkg.version %></em:version>
-        <em:name><%= pkg.name %></em:name>
-        <em:description><%= pkg.description %></em:description>
+        <em:name><%= i18n.extensionName %></em:name>
+        <em:description><%= i18n.extensionDescription %></em:description>
         <em:creator><%= pkg.author.name %></em:creator>
         <em:homepageURL><%= pkg.homepage %></em:homepageURL>
         <em:iconURL>chrome://<%= pkg.name %>/skin/img/icon-48.png</em:iconURL>

@@ -3,6 +3,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        i18n: grunt.file.readJSON('lang/en.json'),
         jshint: {
             options: {
                 strict: true,
